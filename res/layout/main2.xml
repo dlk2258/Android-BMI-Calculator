@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView  
+		android:id="@+id/weight"
+		android:text="Weight in KG : "
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+	/>
+	<EditText
+		android:layout_below="@+id/weight"
+		android:id="@+id/wp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>
+	
+	<TextView  
+		android:layout_below="@+id/wp"
+		android:id="@+id/height"
+		android:text="HEIGHT : "
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+	/>
+	<TextView  
+		android:layout_below="@+id/height"
+		android:id="@+id/height_f"
+		android:text="CM : "
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+	/>
+	<EditText
+		android:layout_below="@+id/height_f"
+		android:id="@+id/hf"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+	/>
+	
+	<Button
+		android:id="@+id/calculate"
+		android:text="Calculate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_below="@+id/hf"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="10px"
+	/>
+	<Button
+		android:id="@+id/cancel"
+		android:text="Back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/hf"
+		android:layout_toLeftOf="@id/calculate"
+		android:layout_alignTop="@id/calculate"
+	/>
+</RelativeLayout>
